@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="일상의 모든 물건을 거래해보세요" />
+    <meta name="keywords" content="중고거래, 판다마켓, 중고마켓, 일상 거래" />
+    <meta name="author" content="sgoldenbird" />
+    <link rel="canonical" href="https://codeit-sprint15-mission.netlify.app/" />
+    <meta name="robots" content="index, follow" />
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="판다 마켓" />
     <meta property="og:description" content="일상의 모든 물건을 거래해보세요" />
@@ -41,9 +46,9 @@
     <link rel="icon" href="/images/panda_face.svg" type="image/svg" />
     <link rel="stylesheet" href="index.css" />
     <title>판다마켓</title>
+    <!-- <script type="module" src="./index.js"></script> -->
   </head>
   <body>
-    <script type="module" src="./index.js"></script>
     <header class="home-header">
       <div class="home-header-content">
         <h1 class="logo-container">
@@ -56,7 +61,7 @@
             />
           </a>
         </h1>
-        <a href="./auth/login.html" class="login-button">로그인</a>
+        <a href="./auth/signin.html" class="signin-button">로그인</a>
       </div>
     </header>
 
@@ -65,7 +70,7 @@
         <div class="banner-content">
           <h2 class="banner-title">
             일상의 모든 물건을
-            <span class="change-line">거래해 보세요</span>
+            <span class="change-line mobile-line">거래해 보세요</span>
           </h2>
           <a href="/items">
             <button class="view-button">구경하러 가기</button>
@@ -157,10 +162,8 @@
     <footer>
       <div class="footer-content">
         <div class="copyright">&copy;codeit - 2024</div>
-        <div class="support">
-          <a href="/privacy">Privacy Policy</a>
-          <a href="/faq">FAQ</a>
-        </div>
+        <a href="/privacy" class="privacy">Privacy Policy</a>
+        <a href="/faq" class="faq">FAQ</a>
         <ul class="social-media">
           <li>
             <a

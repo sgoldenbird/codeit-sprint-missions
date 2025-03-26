@@ -3,6 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="일상의 모든 물건을 거래해보세요" />
+    <meta name="keywords" content="중고거래, 판다마켓, 중고마켓, 일상 거래" />
+    <meta name="author" content="sgoldenbird" />
+    <link
+      rel="canonical"
+      href="https://codeit-sprint15-mission.netlify.app/auth/signin"
+    />
+    <meta name="robots" content="index, follow" />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="판다 마켓 로그인" />
+    <meta property="og:description" content="일상의 모든 물건을 거래해보세요" />
+    <meta
+      property="og:image"
+      content="https://codeit-sprint15-mission.netlify.app/images/panda_pink.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://codeit-sprint15-mission.netlify.app/auth/signin"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="3666415323503290" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="판다 마켓 로그인" />
+    <meta
+      name="twitter:description"
+      content="일상의 모든 물건을 거래해보세요"
+    />
+    <meta
+      name="twitter:image"
+      content="https://codeit-sprint15-mission.netlify.app/images/panda_pink.jpg"
+    />
+    <meta
+      name="twitter:url"
+      content="https://codeit-sprint15-mission.netlify.app/auth/signin"
+    />
     <link
       rel="stylesheet"
       as="style"
@@ -11,11 +48,10 @@
     />
     <link rel="icon" href="/images/panda_face.svg" type="image/svg" />
     <link rel="stylesheet" href="../index.css" />
-    <title>판다마켓 로그인</title>
+    <title>로그인 | 판다마켓 - 일상의 모든 중고 거래</title>
+    <script type="module" src="./auth-validation.js"></script>
   </head>
   <body class="auth-body">
-    <script type="module" src="../index.js"></script>
-
     <div class="auth-container">
       <header class="auth-header">
         <h1 class="logo-container">
@@ -30,7 +66,7 @@
         </h1>
       </header>
 
-      <form class="auth-form" data-auth-type="login" method="POST">
+      <form class="auth-form" data-auth-type="signin" method="POST">
         <div class="input-container">
           <label for="email">이메일</label>
           <input
@@ -52,16 +88,11 @@
               placeholder="비밀번호를 입력해주세요"
             />
             <button
-              class="password-visibility"
+              class="password-visibility eye-closed"
               id="password-visibility"
               type="button"
-            >
-              <img
-                src="../images/close_eye_grey.svg"
-                alt="closed eye icon"
-                class="close-eye"
-              />
-            </button>
+              aria-label="비밀번호 숨기기"
+            ></button>
           </div>
           <div class="validation-error-message"></div>
         </div>
@@ -74,12 +105,12 @@
         <ul class="oauth-site">
           <li>
             <a href="https://www.google.com" class="oauth-button">
-              <img src="../images/google_logo.svg" alt="google login button" />
+              <img src="../images/google_logo.svg" alt="google signin button" />
             </a>
           </li>
           <li>
             <a href="https://www.kakaocorp.com" class="oauth-button">
-              <img src="../images/kakao_logo.svg" alt="kakao login button" />
+              <img src="../images/kakao_logo.svg" alt="kakao signin button" />
             </a>
           </li>
         </ul>
